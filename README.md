@@ -1,8 +1,24 @@
-# pierced
-钉钉内网穿透
+# vue-tv
 
-TCP 穿透需要在数据库里面执行：
-GRANT ALL PRIVILEGES ON *.* TO root@'%' IDENTIFIED BY '123456';
-FLUSH PRIVILEGES;
-数据库连接命令：
-mysql -h vaiwan.com -u root -p -P 1234 //端口号地址
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
