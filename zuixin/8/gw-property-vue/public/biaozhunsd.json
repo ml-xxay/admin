@@ -1,0 +1,58 @@
+{
+  "msg": "标准设定列表",
+  "code": 0,
+  "data": [
+    {
+      "ID": "ID",
+      "GONGSIFL": "公司分类",
+      "GONGSILX": "公司类型",
+      "FUJIID": "父级ID",
+      "XUHAO": "序号",
+      "ZIXIANGYI": "子项一",
+      "ZIXIANGER": "子项二",
+      "SHIFOUSJXFGSYWFB": "是否省检修（分）公司运维分部",
+      "SHUZHILX": "数值类型",
+      "ZUIXIAOZHI": "区间最小值",
+      "ZUIDAZHI": "最大值/区间最大值"
+    },
+    {
+      "ID": "ID",
+      "GONGSIFL": "1",
+      "GONGSILX": "公司类型",
+      "FUJIID": "父级ID",
+      "XUHAO": "序号",
+      "ZIXIANGYI": "子项一",
+      "ZIXIANGER": "子项二",
+      "SHIFOUSJXFGSYWFB": "是否省检修（分）公司运维分部",
+      "SHUZHILX": "数值类型",
+      "ZUIXIAOZHI": "区间最小值",
+      "ZUIDAZHI": "最大值/区间最大值"
+    },
+    {
+      "ID": "ID",
+      "GONGSIFL": "2",
+      "GONGSILX": "公司类型",
+      "FUJIID": "父级ID",
+      "XUHAO": "序号",
+      "ZIXIANGYI": "子项一",
+      "ZIXIANGER": "子项二",
+      "SHIFOUSJXFGSYWFB": "是否省检修（分）公司运维分部",
+      "SHUZHILX": "数值类型",
+      "ZUIXIAOZHI": "区间最小值",
+      "ZUIDAZHI": "最大值/区间最大值"
+    },
+    {
+      "ID": "ID",
+      "GONGSIFL": "3",
+      "GONGSILX": "公司类型",
+      "FUJIID": "父级ID",
+      "XUHAO": "序号",
+      "ZIXIANGYI": "子项一",
+      "ZIXIANGER": "子项二",
+      "SHIFOUSJXFGSYWFB": "是否省检修（分）公司运维分部",
+      "SHUZHILX": "数值类型",
+      "ZUIXIAOZHI": "区间最小值",
+      "ZUIDAZHI": "最大值/区间最大值"
+    }
+  ]
+}

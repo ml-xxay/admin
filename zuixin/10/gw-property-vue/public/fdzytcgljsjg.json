@@ -1,0 +1,58 @@
+{
+  "msg": "房产资源统筹管理检索结果",
+  "code": 0,
+  "data": [
+    {
+      "ID": "012070000000000000072076",
+      "GONGSIMINGCHENG": "滁州供电公司",
+      "FANGDIZIYUANMINGCHENG": "生产区室外空地",
+      "WEIZHI": "滁州市花园西路",
+      "JINGWEIDU": "(118.316264,32.303627)",
+      "ZHIXIANJULI": "0",
+      "FANGDIZIYUANMIAOSHU": "停车场空地,有院墙,未利用",
+      "KETONGCHOUMIANJI": "500㎡",
+      "SHIYONGXING": "停车场,室外堆场、室外料棚"
+    }, {
+      "ID": "012070000000000000072076",
+      "GONGSIMINGCHENG": "滁州供电公司",
+      "FANGDIZIYUANMINGCHENG": "生产区室外空地",
+      "WEIZHI": "滁州市花园西路",
+      "JINGWEIDU": "(118.316264,32.303627)",
+      "ZHIXIANJULI": "0",
+      "FANGDIZIYUANMIAOSHU": "停车场空地,有院墙,未利用",
+      "KETONGCHOUMIANJI": "500㎡",
+      "SHIYONGXING": "停车场,室外堆场、室外料棚"
+    }, {
+      "ID": "012070000000000000072076",
+      "GONGSIMINGCHENG": "滁州供电公司",
+      "FANGDIZIYUANMINGCHENG": "生产区室外空地",
+      "WEIZHI": "滁州市花园西路",
+      "JINGWEIDU": "(118.316264,32.303627)",
+      "ZHIXIANJULI": "0",
+      "FANGDIZIYUANMIAOSHU": "停车场空地,有院墙,未利用",
+      "KETONGCHOUMIANJI": "500㎡",
+      "SHIYONGXING": "停车场,室外堆场、室外料棚"
+    }, {
+      "ID": "012070000000000000072076",
+      "GONGSIMINGCHENG": "滁州供电公司",
+      "FANGDIZIYUANMINGCHENG": "生产区室外空地",
+      "WEIZHI": "滁州市花园西路",
+      "JINGWEIDU": "(118.316264,32.303627)",
+      "ZHIXIANJULI": "0",
+      "FANGDIZIYUANMIAOSHU": "停车场空地,有院墙,未利用",
+      "KETONGCHOUMIANJI": "500㎡",
+      "SHIYONGXING": "停车场,室外堆场、室外料棚"
+    }, {
+      "ID": "012070000000000000072076",
+      "GONGSIMINGCHENG": "滁州供电公司",
+      "FANGDIZIYUANMINGCHENG": "生产区室外空地",
+      "WEIZHI": "滁州市花园西路",
+      "JINGWEIDU": "(118.316264,32.303627)",
+      "ZHIXIANJULI": "0",
+      "FANGDIZIYUANMIAOSHU": "停车场空地,有院墙,未利用",
+      "KETONGCHOUMIANJI": "500㎡",
+      "SHIYONGXING": "停车场,室外堆场、室外料棚"
+    }
+
+  ]
+}

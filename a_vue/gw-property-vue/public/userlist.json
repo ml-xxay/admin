@@ -1,0 +1,24 @@
+{
+  "msg": "用户信息列表",
+  "code": 0,
+  "data": [
+    {
+      "YONGHUID": "1",
+      "ZHANGHAO": "sutang",
+      "MIMA": "988611",
+      "GONGSIID": "001",
+      "YONGHUQUANXIAN": "省级用户",
+      "FANGKE": "2188",
+      "ZHUANGTAI": 1
+    },
+    {
+      "YONGHUID": "2",
+      "ZHANGHAO": "sutang2",
+      "MIMA": "9122121",
+      "GONGSIID": "002",
+      "YONGHUQUANXIAN": "市级用户",
+      "FANGKE": "2199",
+      "ZHUANGTAI": 0
+    }
+  ]
+}
