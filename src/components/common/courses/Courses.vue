@@ -1,11 +1,18 @@
 <template>
   <div class="box">
-    <div class="box-bd" v-for="item in courselist" :key="item.id"  @click="gocourseInfo(item.id)">
+    <div
+      class="box-bd"
+      v-for="item in courselist"
+      :key="item.id"
+      @click="gocourseInfo(item.id)"
+    >
       <div class="picture"><img :src="item.picture" alt="" /></div>
       <p class="course-name">{{ item.brief }}</p>
+
       <div class="info">
-        <span>{{ level(item.level) }}</span> <span>$:{{ item.price }}</span>
+        <span>难度:{{ level(item.level) }}</span>
       </div>
+      <div class="price">$:{{ item.price }}</div>
     </div>
   </div>
 </template>
@@ -34,9 +41,9 @@ export default {
         return "高级";
       }
     },
-    gocourseInfo(id){
-      this.$router.push({path:'CourseInfo',query:{id}})
-    }
+    gocourseInfo(id) {
+      this.$router.push({ path: "CourseInfo", query: { id } });
+    },
   },
   computed: {},
 };
@@ -51,13 +58,18 @@ export default {
   background-color: #fff;
 }
 .box-bd {
+  position: relative;
   width: 280px;
   height: 270px;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgba(100, 100, 100, 0.2);
+  transition: all 0.5s;
 }
-.box-bd:last-child{
+.box-bd:hover {
+  top: -7px;
+}
+.box-bd:last-child {
   margin-right: auto;
 }
 .picture {
@@ -73,20 +85,27 @@ export default {
 }
 .info {
   display: flex;
-  height: 30px;
+  height: 15px;
   padding: 0 10px;
+  margin-bottom: 10px;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 15px;
+  color: #9199a1;
 }
 .info span:nth-child(2) {
   color: red;
   margin-left: 5px;
 }
-.course-name{
- color: orange;
- font-size:14px;
- margin:10px;
- padding: 0;
- height: 58px;
+.course-name {
+  margin: 0;
+  color: #545c63;
+  font-size: 14px;
+  padding: 5px 0 5px 8px;
+  height: 40px;
+}
+.price{
+  height: 20px;
+  color: red;
+  padding-left: 8px;
 }
 </style>

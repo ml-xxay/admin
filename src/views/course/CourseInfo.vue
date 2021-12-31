@@ -104,17 +104,18 @@ export default {
       return parentItem.children;
     },
     handleClick(tab, event) {
-      console.log(tab, event);
+      console.log(tab, event); 
     },
     handleNodeClick(data) {
       data.courseList = JSON.stringify(this.courseList);
+      console.log(data);
       this.$store.commit("ADDSECTION", data);
-      // this.$router.push({ path: "/coursevideo", query: { name: data.name } });
+      this.$router.push({ path: "/coursevideo", query: { name: data.name } });
     },
-    ship() {
-      this.$router.push("/wodeship");
-      // this.$store.dispatch("setData", this.kecheng);
-    },
+    // ship() {
+    //   this.$router.push("/wodeship");
+    //   this.$store.dispatch("setData", this.kecheng);
+    // },
   },
 };
 </script>

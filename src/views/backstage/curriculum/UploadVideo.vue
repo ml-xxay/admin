@@ -46,6 +46,7 @@
           </template>
         </el-table-column>
         <el-table-column prop="videoUrl" label="视屏链接"> </el-table-column>
+        <el-table-column prop="duration" label="总时长(秒)"> </el-table-column>
         <el-table-column prop="address" label="操作">
           <template>
             <el-button type="warning">删除</el-button>
@@ -71,21 +72,32 @@ export default {
   },
   created() {},
   methods: {
+    // 点击上传的时候上传
     submitUpload() {
       this.$refs.upload.submit();
     },
     handleRemove(file, fileList) {
       console.log(file, fileList);
     },
+    // 选择视屏
     async handleChange(e) {
       console.log(e);
+      
       let video = {
         flieName: "",
         size: 0,
         filePercent: 0,
         videoUrl: "",
+        duration:''//时长
       };
-      let {file}=e
+      let {file}=e;
+      let fileurl = URL.createObjectURL(file);//第一步  获取这个file地址
+      let audio = new Audio(fileurl); //利用地址创建音频audio对象
+      //监听audio触发
+      audio.addEventListener("loadedmetadata", function(){
+        video.duration = parseInt(audio.duration)
+      })
+      console.log(audio);
       let filename = file.name;
       video.flieName = filename;
       video.size = file.size;
@@ -98,8 +110,8 @@ export default {
       let observable = qiniu.upload(file, filename, qiniuToken);
       observable.subscribe({
         next: (result) => {
-          // 主要用来展示进度
-          console.log(result.total.percent);
+          // // 主要用来展示进度
+          // console.log(result.total.percent);
           video.filePercent = parseInt(result.total.percent);
         },
         // 上传失败
@@ -117,6 +129,7 @@ export default {
         },
       });
       this.tableData.push(video);
+      console.log();
     },
     //   过滤文件大小
     sizeInfo(size) {

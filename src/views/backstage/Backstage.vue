@@ -34,14 +34,19 @@
               </el-menu-item>
             </el-menu-item-group>
           </el-submenu>
+          <!-- 平级一级菜单 -->
           <el-submenu index="2">
             <template slot="title">
-              <i class="el-icon-location"></i>
-              <span>导航二</span>
+              <i class="el-icon-postcard"></i>
+              <span>试卷管理</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="2-1">选项1</el-menu-item>
-              <el-menu-item index="2-2">选项2</el-menu-item>
+              <el-menu-item index="testpaperlist">
+                <i class="el-icon-reading"></i>试卷列表
+                </el-menu-item>
+              <el-menu-item index="testpapercenter">
+                <i class="el-icon-document-copy"></i>试卷中心
+                </el-menu-item>
             </el-menu-item-group>
           </el-submenu>
         </el-menu>

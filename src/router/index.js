@@ -53,22 +53,42 @@ const routes = [{
             {
                 path: '/uploadvideo',
                 component: () =>
-                    import ('../views/backstage/curriculum/UploadVideo')
+                    import ('@/views/backstage/curriculum/UploadVideo')
             },
             {
                 path: '/coursemanagement',
                 component: () =>
-                    import ('../views/backstage/curriculum/CourseManagement')
+                    import ('@/views/backstage/curriculum/CourseManagement')
             },
             {
                 path: '/addCourse',
                 component: () =>
-                    import ('../views/backstage/curriculum/childercomps/AddCourse')
+                    import ('@/views/backstage/curriculum/childercomps/AddCourse')
             },
             {
                 path: '/editcourse',
                 component: () =>
-                    import ('../views/backstage/curriculum/childercomps/EditCourse')
+                    import ('@/views/backstage/curriculum/childercomps/EditCourse')
+            },
+            {
+                path: '/testpaperlist',
+                component: () =>
+                    import ('@/views/backstage/testpaper/TestPaperList')
+            },
+            {
+                path: '/testpapercenter',
+                component: () =>
+                    import ('@/views/backstage/testpaper/TestPaperCenter')
+            },
+            {
+                path: '/addtextpaper',
+                component: () =>
+                    import ('@/views/backstage/testpaper/children/AddTextPaper')
+            },
+            {
+                path: '/textpaperinfo',
+                component: () =>
+                    import ('@/views/backstage/testpaper/children/TextPaperInfo')
             }
 
 
